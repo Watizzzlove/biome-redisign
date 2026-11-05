@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="light">
+<html lang="ru" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BIOME — UI/UX Redesign & Design System Showcase</title>
+  <title>BIOME — Dark Neon UI/UX Redesign & Telemetry HUD Showcase</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -19,24 +19,22 @@
         </div>
         <div class="brand-text">
           <span class="brand-name">BIOME</span>
-          <span class="brand-tag">UI/UX REDESIGN 2026</span>
+          <span class="brand-tag">DARK NEON REDESIGN 2026</span>
         </div>
       </div>
 
       <nav class="header-nav">
-        <a href="#screens" class="nav-link active">Экраны редизайна</a>
+        <a href="#screens" class="nav-link active">Экраны концептов</a>
         <a href="#comparison" class="nav-link">Было / Стало</a>
-        <a href="#design-system" class="nav-link">Дизайн-система</a>
-        <a href="#overview" class="nav-link">Борды</a>
+        <a href="#overview" class="nav-link">Панорама бордов</a>
+        <a href="#dna" class="nav-link">ДНК Бренда</a>
       </nav>
 
       <div class="header-actions">
-        <!-- Theme Toggle -->
-        <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">
-          <span class="theme-icon light-icon">☀️</span>
-          <span class="theme-icon dark-icon">🌙</span>
-          <span class="theme-label">Тёмная тема</span>
-        </button>
+        <div class="status-pill">
+          <span class="pulse-dot"></span>
+          <span>Два концепта готовы</span>
+        </div>
       </div>
     </div>
   </header>
@@ -46,166 +44,174 @@
     <div class="container hero-content">
       <div class="hero-chip">
         <span class="chip-dot"></span>
-        Персональный AI-помощник по здоровью · Кейс редизайна
+        Персональный AI-ассистент по здоровью · Эксклюзивный тёмный кибер-неон
       </div>
       <h1 class="hero-title">
-        Редизайн интерфейса <span class="gradient-text">BIOME</span><br>
-        с полноценной дизайн-системой
+        Редизайн <span class="gradient-text">BIOME</span> в аутентичном неоновом стиле
       </h1>
       <p class="hero-subtitle">
-        Систематизация визуального хаоса, внедрение единых гайдлайнов iOS & Android, 
-        просторный интерактивный дашборд с почасовой активностью и паритет Светлой и Тёмной тем.
+        Полный возврат к оригинальной ДНК продукта: глубокий кибер-обсидиан (<code class="color-chip">#020B0E</code>), 
+        фирменный электрический циан (<code class="color-chip">#00E5FF</code>) и изумрудный неон. 
+        Убраны стоковые 3D-фото еды и кроссовок. Вместо них — высокотехнологичная биометрическая телеметрия, 
+        подлинная AI-волна и 3D-сфера бренда.
       </p>
 
-      <!-- Key Pillars -->
+      <!-- Concept Switcher Bar -->
+      <div class="version-switcher-bar">
+        <div class="switcher-label">ВЫБЕРИТЕ КОНЦЕПТ ДЛЯ ПРОСМОТРА:</div>
+        <div class="switcher-buttons">
+          <button class="mode-btn active" data-mode="minimal">
+            <span class="btn-icon">⚡</span>
+            <div class="btn-text">
+              <strong>Версия 1: Тёмный Минимализм</strong>
+              <span>Лаконичный, чистый, современный кибер-интерфейс</span>
+            </div>
+          </button>
+          <button class="mode-btn" data-mode="pro">
+            <span class="btn-icon">📊</span>
+            <div class="btn-text">
+              <strong>Версия 2: Тёмный Pro HUD</strong>
+              <span>Максимум информации: круговой спидометр, ЭКГ, фазы сна</span>
+            </div>
+          </button>
+          <button class="mode-btn" data-mode="compare">
+            <span class="btn-icon">🔄</span>
+            <div class="btn-text">
+              <strong>Сравнение с оригиналом</strong>
+              <span>Было (оригинальные экраны) vs Стало (редизайн)</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Stats Strip -->
       <div class="pillars-grid">
         <div class="pillar-card">
           <div class="pillar-num">01</div>
-          <div class="pillar-title">3D-метафоры & Минимализм</div>
-          <div class="pillar-desc">Избавление от неонового шума и лишних рамок. Крупные фотореалистичные 3D-модели метрик.</div>
+          <div class="pillar-title">Исключительно тёмная тема</div>
+          <div class="pillar-desc">Глубокие биометрические фоны (#020B0E, #04151F), снижающие нагрузку на зрение и создающие премиальный вид.</div>
         </div>
         <div class="pillar-card">
           <div class="pillar-num">02</div>
-          <div class="pillar-title">Интерактивный дашборд</div>
-          <div class="pillar-desc">7-дневная шкала с системными датами, подпись «Сегодня» и 12-колоночная гистограмма дня.</div>
+          <div class="pillar-title">Аутентичный брендовый неон</div>
+          <div class="pillar-desc">Восстановлены фирменные светящиеся рамки (#00E5FF, w: 1.2px), свечение кнопок и оригинальная шелковая AI-волна.</div>
         </div>
         <div class="pillar-card">
           <div class="pillar-num">03</div>
-          <div class="pillar-title">Светлая & Тёмная темы</div>
-          <div class="pillar-desc">Глубокая палитра тёмного сланца (#080C14 / #161F30) с контрастом WCAG AA и сочными акцентами.</div>
+          <div class="pillar-title">Zero-Slop Telemetry</div>
+          <div class="pillar-desc">Никаких стоковых фото мисок с авокадо. Реалистичные датчики: пульс ЭКГ, фазы сна, Б/Ж/У макросы и био-возраст.</div>
         </div>
         <div class="pillar-card">
           <div class="pillar-num">04</div>
-          <div class="pillar-title">Целостная навигация</div>
-          <div class="pillar-desc">Сбалансированный таб-бар с монолитными залитыми иконками и центральной кнопкой AI-ассистента.</div>
+          <div class="pillar-title">Гармоничный таб-бар</div>
+          <div class="pillar-desc">Единая стилистика залитых иконок (Solid Fill) и интерактивная центральная 3D AI-сфера бренда.</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Screens Showcase Section -->
-  <section id="screens" class="showcase-section">
+  <section id="screens" class="screens-section">
     <div class="container">
-      <div class="section-header">
-        <div class="section-tag">КЛЮЧЕВЫЕ ЭКРАНЫ</div>
-        <h2 class="section-title">Обновленные экраны приложения</h2>
-        <p class="section-desc">Нажмите на любой экран, чтобы открыть его в высоком разрешении. Переключатель темы в шапке меняет цвет всех макетов.</p>
-        
-        <!-- View Mode Switcher -->
-        <div class="view-switcher">
-          <button class="switch-btn active" data-view="redesign">✨ Только редизайн</button>
-          <button class="switch-btn" data-view="compare">⚖️ Сравнение (Было vs Стало)</button>
-        </div>
-      </div>
-
-      <!-- Screen 1: Home Dashboard -->
+      
+      <!-- Screen 1: Home -->
       <div class="screen-showcase-row" id="screen-home">
-        <div class="screen-info">
-          <div class="screen-meta">
-            <span class="screen-badge">ЭКРАН 01</span>
-            <span class="screen-ref">Редизайн оригинальных экранов 14–15</span>
-          </div>
-          <h3 class="screen-title">Главный экран (Dashboard & Hub)</h3>
-          <p class="screen-lead">Центральный хаб здоровья пользователя: контекстное приветствие, быстрый доступ к диалогу с AI, трекинг рациона и челленджи.</p>
-          
+        <div class="screen-meta">
+          <div class="screen-badge">ЭКРАН 01</div>
+          <h2 class="screen-title">Главный экран (Home)</h2>
+          <p class="screen-desc" id="home-desc">
+            Центр управления здоровьем. Баннер AI-ассистента с аутентичной шелковой волной, 
+            трекер питания с макросами, аккуратные карточки челленджей и прогресс карты здоровья.
+          </p>
+
           <div class="features-list">
             <div class="feature-item">
-              <span class="feat-icon">🎯</span>
+              <span class="feat-icon">✦</span>
               <div>
-                <strong>Иерархия первого экрана:</strong> Вместо нагромождения одинаковых карточек выделен ключевой AI-виджет и оценка рисков.
+                <strong>Аутентичная AI-волна:</strong> Возвращен фирменный графический элемент оригинального BIOME, подчеркивающий технологичность.
               </div>
             </div>
-            <div class="feature-item">
-              <span class="feat-icon">🥑</span>
-              <div>
-                <strong>3D-карточки челленджей:</strong> Фотореалистичные объемные ассеты (питание / белок, здоровые привычки / 10k шагов) с вылетом за пределы плашки.
-              </div>
-            </div>
-            <div class="feature-item">
-              <span class="feat-icon">🥗</span>
-              <div>
-                <strong>Сводка питания за день:</strong> Компактный счетчик калорий (1 420 / 2 200 ккал) с быстрой кнопкой добавления приема пищи.
-              </div>
-            </div>
-            <div class="feature-item">
-              <span class="feat-icon">🗺️</span>
-              <div>
-                <strong>Карта здоровья:</strong> Наглядная шкала прогресса заполнения (20%) вместо слепого перехода в профиль.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="screen-display-area">
-          <!-- Redesign Device -->
-          <div class="device-card redesign-view">
-            <div class="device-tag">РЕДИЗАЙН 2026</div>
-            <div class="phone-frame">
-              <div class="phone-island"></div>
-              <img src="assets/screen_1_home_light.png" alt="BIOME Главный экран Редизайн" class="screen-img dynamic-theme-img" data-light="assets/screen_1_home_light.png" data-dark="assets/screen_1_home_dark.png">
-            </div>
-          </div>
-
-          <!-- Original Screen (for compare view) -->
-          <div class="device-card original-view hidden">
-            <div class="device-tag orig-tag">ОРИГИНАЛ (БЫЛО)</div>
-            <div class="phone-frame original-frame">
-              <img src="assets/original_screen_1.jpg" alt="BIOME Главный экран Было" class="screen-img">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Screen 2: Health Indicators -->
-      <div class="screen-showcase-row reverse" id="screen-indicators">
-        <div class="screen-info">
-          <div class="screen-meta">
-            <span class="screen-badge">ЭКРАН 02</span>
-            <span class="screen-ref">Редизайн оригинальных экранов 17–18</span>
-          </div>
-          <h3 class="screen-title">Индикаторы здоровья и Дашборд шагов</h3>
-          <p class="screen-lead">Мониторинг физиологических показателей: глубокая аналитика недели с почасовой разбивкой и синхронизация метрик Health Connect.</p>
-          
-          <div class="features-list">
             <div class="feature-item">
               <span class="feat-icon">📊</span>
               <div>
-                <strong>Системные даты под шкалами:</strong> Даты расставлены чистой типографикой без визуального шума. Текущий день акцентирован подписью «Сегодня».
-              </div>
-            </div>
-            <div class="feature-item">
-              <span class="feat-icon">🔥</span>
-              <div>
-                <strong>12-колоночная гистограмма активности:</strong> Внутрисуточный график шагов с динамическими столбиками, подсветкой вечернего пика (18:30) и временными маркерами.
-              </div>
-            </div>
-            <div class="feature-item">
-              <span class="feat-icon">❤️</span>
-              <div>
-                <strong>Крупные 3D-модели показателей:</strong> Сердце (пульс), кровать (сон), мозг (стресс), песочные часы (биовозраст), весы и капля воды в единой стилистике.
+                <strong>Питание & Макросы:</strong> Наглядная разбивка калорий и шкалы Б/Ж/У без лишних кликов и без громоздких картинок.
               </div>
             </div>
             <div class="feature-item">
               <span class="feat-icon">⚡</span>
               <div>
-                <strong>Статус Health Connect:</strong> Аккуратный зеленый бейдж подключения вместо тяжелых баннеров авторизации.
+                <strong>Челленджи без стоковых фото:</strong> Технологичные карточки белкового стрика и шагов со статусами выполнения.
               </div>
             </div>
           </div>
         </div>
 
         <div class="screen-display-area">
-          <!-- Redesign Device -->
+          <!-- Redesign Device View -->
           <div class="device-card redesign-view">
-            <div class="device-tag">РЕДИЗАЙН 2026</div>
+            <div class="device-tag" id="tag-home">ВЕРСИЯ 1: МИНИМАЛИЗМ</div>
             <div class="phone-frame">
               <div class="phone-island"></div>
-              <img src="assets/screen_2_indicators_light.png" alt="BIOME Индикаторы здоровья Редизайн" class="screen-img dynamic-theme-img" data-light="assets/screen_2_indicators_light.png" data-dark="assets/screen_2_indicators_dark.png">
+              <img id="img-screen-home" src="assets/screen_1_home_minimal.png" alt="BIOME Home Redesign" class="screen-img"
+                   data-minimal="assets/screen_1_home_minimal.png"
+                   data-pro="assets/screen_1_home_pro.png">
             </div>
           </div>
 
-          <!-- Original Screen (for compare view) -->
-          <div class="device-card original-view hidden">
+          <!-- Original Screen View (for compare mode) -->
+          <div class="device-card original-view hidden" id="orig-home">
+            <div class="device-tag orig-tag">ОРИГИНАЛ (БЫЛО)</div>
+            <div class="phone-frame original-frame">
+              <img src="assets/original_screen_1.jpg" alt="BIOME Главная Было" class="screen-img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen 2: Indicators -->
+      <div class="screen-showcase-row reverse" id="screen-indicators">
+        <div class="screen-meta">
+          <div class="screen-badge">ЭКРАН 02</div>
+          <h2 class="screen-title">Индикаторы здоровья (Telemetry Dashboard)</h2>
+          <p class="screen-desc" id="indicators-desc">
+            Ключевой экран аналитики. В версии «Минимализм» — чистый 7-дневный дашборд с датами и почасовой гистограммой. 
+            В версии «Pro» — легендарный круговой спидометр шагов, дистанции и калорий, кривая ЭКГ и 4 фазы сна.
+          </p>
+
+          <div class="features-list">
+            <div class="feature-item">
+              <span class="feat-icon">🎯</span>
+              <div>
+                <strong>Четкие даты и фокус «Сегодня»:</strong> Никаких рамок под цифрами, ровная базовая линия и яркий неоновый акцент на текущей среде.
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feat-icon">📈</span>
+              <div>
+                <strong>Почасовая динамика активности:</strong> Графическая гистограмма дня с выделением пикового часа (18:30) и временными засечками.
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feat-icon">💓</span>
+              <div>
+                <strong>Биометрические виджеты:</strong> Кардиограмма ЭКГ, 4 фазы сна (Deep, REM, Light, Awake), шкала биологического возраста и стресс.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="screen-display-area">
+          <div class="device-card redesign-view">
+            <div class="device-tag" id="tag-indicators">ВЕРСИЯ 1: МИНИМАЛИЗМ</div>
+            <div class="phone-frame">
+              <div class="phone-island"></div>
+              <img id="img-screen-indicators" src="assets/screen_2_indicators_minimal.png" alt="BIOME Indicators Redesign" class="screen-img"
+                   data-minimal="assets/screen_2_indicators_minimal.png"
+                   data-pro="assets/screen_2_indicators_pro.png">
+            </div>
+          </div>
+
+          <div class="device-card original-view hidden" id="orig-indicators">
             <div class="device-tag orig-tag">ОРИГИНАЛ (БЫЛО)</div>
             <div class="phone-frame original-frame">
               <img src="assets/original_screen_2.jpg" alt="BIOME Индикаторы Было" class="screen-img">
@@ -216,103 +222,172 @@
 
       <!-- Screen 3: AI Chat -->
       <div class="screen-showcase-row" id="screen-chat">
-        <div class="screen-info">
-          <div class="screen-meta">
-            <span class="screen-badge">ЭКРАН 03</span>
-            <span class="screen-ref">Редизайн оригинального экрана 20</span>
-          </div>
-          <h3 class="screen-title">AI-Чат с персональным ассистентом</h3>
-          <p class="screen-lead">Умный диалог по здоровью: структурированные подсказки по рациону, быстрый анализ фото блюд и поддержка тренировок.</p>
-          
+        <div class="screen-meta">
+          <div class="screen-badge">ЭКРАН 03</div>
+          <h2 class="screen-title">AI-Консультант (Biome Chat)</h2>
+          <p class="screen-desc" id="chat-desc">
+            Интеллектуальный ассистент. Вверху — центрированный брендинг «biome» с пульсирующей неоновой точкой. 
+            Сообщения содержат медицинскую интерпретацию показателей сна и пульса с четкими практическими шагами.
+          </p>
+
           <div class="features-list">
+            <div class="feature-item">
+              <span class="feat-icon">🌐</span>
+              <div>
+                <strong>3D-Сфера бренда:</strong> Подлинная анимированная AI-сфера BIOME в роли аватара консультанта и в центре таб-бара.
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feat-icon">📋</span>
+              <div>
+                <strong>Клинический срез & Чеклист:</strong> Ответ бота подкреплен конкретной телеметрией дня и интерактивным планом тренировки.
+              </div>
+            </div>
             <div class="feature-item">
               <span class="feat-icon">💬</span>
               <div>
-                <strong>Карточки-сниппеты рекомендаций:</strong> Выделенные виджеты («Совет по рациону») внутри сообщений для моментального восприятия главного.
-              </div>
-            </div>
-            <div class="feature-item">
-              <span class="feat-icon">💡</span>
-              <div>
-                <strong>Быстрые контекстные чипсы:</strong> Кнопки «Что съесть после зала?», «Оценить фото блюда 📸» над инпутом для снижения барьера общения.
-              </div>
-            </div>
-            <div class="feature-item">
-              <span class="feat-icon">⌨️</span>
-              <div>
-                <strong>Эргономичный инпут:</strong> Поле ввода скрепки, микрофона и кнопки отправки отвязано от таб-бара и не создает оптического наезда при фокусе.
-              </div>
-            </div>
-            <div class="feature-item">
-              <span class="feat-icon">✨</span>
-              <div>
-                <strong>Активная AI-кнопка:</strong> Центральная кнопка таб-бара светится фирменным градиентом в активном состоянии, четко разделяя экраны.
+                <strong>Быстрые сценарии:</strong> Чипы в один клик («План тренировки», «График пульса», «Экспорт врачу») ускоряют сценарии.
               </div>
             </div>
           </div>
         </div>
 
         <div class="screen-display-area">
-          <!-- Redesign Device -->
           <div class="device-card redesign-view">
-            <div class="device-tag">РЕДИЗАЙН 2026</div>
+            <div class="device-tag" id="tag-chat">ВЕРСИЯ 1: МИНИМАЛИЗМ</div>
             <div class="phone-frame">
               <div class="phone-island"></div>
-              <img src="assets/screen_3_chat_light.png" alt="BIOME AI-Чат Редизайн" class="screen-img dynamic-theme-img" data-light="assets/screen_3_chat_light.png" data-dark="assets/screen_3_chat_dark.png">
+              <img id="img-screen-chat" src="assets/screen_3_chat_minimal.png" alt="BIOME AI Chat Redesign" class="screen-img"
+                   data-minimal="assets/screen_3_chat_minimal.png"
+                   data-pro="assets/screen_3_chat_pro.png">
             </div>
           </div>
 
-          <!-- Original Screen (for compare view) -->
-          <div class="device-card original-view hidden">
+          <div class="device-card original-view hidden" id="orig-chat">
             <div class="device-tag orig-tag">ОРИГИНАЛ (БЫЛО)</div>
             <div class="phone-frame original-frame">
-              <img src="assets/original_screen_3.jpg" alt="BIOME AI-Чат Было" class="screen-img">
+              <img src="assets/original_screen_3.jpg" alt="BIOME Чат Было" class="screen-img">
             </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Side-by-Side Comparison Section -->
+  <section id="comparison" class="compare-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">СРАВНЕНИЕ В ДЕТАЛЯХ</div>
+        <h2 class="section-title">Было vs Стало: Ключевые отличия</h2>
+        <p class="section-desc">Наглядное сопоставление оригинального приложения и предложенных решений редизайна.</p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Параметр</th>
+              <th>Оригинал (Было)</th>
+              <th>Версия 1 (Минимализм)</th>
+              <th>Версия 2 (Pro HUD)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Цветовая гамма</strong></td>
+              <td>Тёмная, но со случайными градиентами и блёклыми блоками</td>
+              <td>Глубокий кибер-обсидиан (<code class="color-chip">#020B0E</code>) + аккуратный неон</td>
+              <td>Высококонтрастный биометрический HUD (<code class="color-chip">#020B0E</code> + <code class="color-chip">#00E5FF</code>)</td>
+            </tr>
+            <tr>
+              <td><strong>Дашборд шагов</strong></td>
+              <td>Сжатые шкалы, наезд подписей, текстовое описание активности</td>
+              <td>Просторная 7-дневная шкала, даты без рамок, 12-столбчатый график</td>
+              <td>Круговой мульти-индикатор (шаги, км, ккал) + 24h штрихкод активности</td>
+            </tr>
+            <tr>
+              <td><strong>Графика метрик</strong></td>
+              <td>Разрозненные 2D и 3D иконки разных стилей</td>
+              <td>Чистая векторная телеметрия + оригинальная AI-волна бренда</td>
+              <td>Кривая ЭКГ, 4 фазы сна, ползунок биологического возраста</td>
+            </tr>
+            <tr>
+              <td><strong>AI-Ассистент</strong></td>
+              <td>Громоздкие сообщения простыней без структуры</td>
+              <td>Лаконичный диалог с фокусом на сне и тренировке + чипы</td>
+              <td>Клиническое заключение с прикрепленным био-срезом и чеклистом</td>
+            </tr>
+            <tr>
+              <td><strong>Нижний таб-бар</strong></td>
+              <td>Смешение контурных и залитых иконок, плоская средняя кнопка</td>
+              <td>Единый залитый иконочный сет + светящаяся 3D-сфера бренда</td>
+              <td>Инженерный HUD таб-бар с активной подсветкой разделов</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Boards Panoramic Section -->
+  <section id="overview" class="boards-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">ПАНОРАМА БОРДОВ В BRILLIANT</div>
+        <h2 class="section-title">Оригинальные макеты проекта</h2>
+        <p class="section-desc">Нажмите на любой борд для просмотра в сверхвысоком разрешении.</p>
+      </div>
+
+      <div class="boards-grid">
+        <div class="board-card">
+          <div class="board-card-header">
+            <h3>⚡ Борд 1: Тёмный Неон (Минимализм)</h3>
+            <span class="board-badge">ВЕРСИЯ 1</span>
+          </div>
+          <div class="board-preview-card">
+            <img src="assets/board_1_minimal.png" alt="BIOME Board 1 Minimal" class="board-img zoomable">
+          </div>
+        </div>
+
+        <div class="board-card">
+          <div class="board-card-header">
+            <h3>📊 Борд 2: Тёмный Неон Pro (Максимум информации)</h3>
+            <span class="board-badge pro-badge">ВЕРСИЯ 2 (PRO)</span>
+          </div>
+          <div class="board-preview-card">
+            <img src="assets/board_2_pro.png" alt="BIOME Board 2 Pro" class="board-img zoomable">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Full Boards Section -->
-  <section id="overview" class="boards-section">
+  <!-- Brand DNA Section -->
+  <section id="dna" class="ds-section">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">ПОЛНЫЕ БОРДЫ</div>
-        <h2 class="section-title">Панорама дизайн-системы</h2>
-        <p class="section-desc">Единый холст с тремя экранами, спецификацией иконок и правил навигации в активной теме.</p>
-      </div>
-
-      <div class="board-preview-card">
-        <img id="fullBoardImg" src="assets/biome_board_light.png" alt="BIOME Full Board Overview" class="board-img" data-light="assets/biome_board_light.png" data-dark="assets/biome_board_dark.png">
-      </div>
-    </div>
-  </section>
-
-  <!-- Design System Principles -->
-  <section id="design-system" class="ds-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">ДИЗАЙН-СИСТЕМА</div>
-        <h2 class="section-title">Принципы и правила реализации</h2>
+        <div class="section-tag">СТРАТЕГИЯ РЕДИЗАЙНА</div>
+        <h2 class="section-title">Почему заказчику понравятся эти концепты</h2>
       </div>
 
       <div class="ds-grid">
         <div class="ds-card">
-          <h4>🎨 Цветовые токены</h4>
-          <p>Разделение на базовые и семантические токены. Светлая тема (#F8FAFC, #0F172A) и Тёмная (#080C14, #161F30, #2DD4BF) с подтвержденным контрастом WCAG AA.</p>
+          <h4>🌌 Сохранение уникального духа бренда</h4>
+          <p>BIOME задумывался как высокотехнологичный персональный ассистент биохакинга. Мы вернули тёмную тему и неоновое сияние, устранив ощущение легковесного бытового трекера.</p>
         </div>
         <div class="ds-card">
-          <h4>📱 Навигация (Tab Bar)</h4>
-          <p>Инвариантность стиля иконок: только сплошная заливка (`Solid Fill Set`). Замена неуместной вилки/ножа на профильный `notebook-fill` для Дневника.</p>
+          <h4>🚫 Полный отказ от визуального шума</h4>
+          <p>Никаких стоковых картинок еды или обуви. Все визуализации строго функциональны: диаграммы, гистограммы, кольца готовности и фазы сна несут прямую информационную пользу.</p>
         </div>
         <div class="ds-card">
-          <h4>📐 Сетка и типографика</h4>
-          <p>8-точечная сетка отступов, шрифт Inter с пропорциональными высотами строк и выравнивание всех шкал по базовой линии `y(e)`.</p>
+          <h4>📱 Два ответа на разные потребности</h4>
+          <p>Минималистичная версия идеальна для повседневного быстрого чека здоровья, а Pro-версия дает исчерпывающую клиническую глубину для продвинутых биохакеров и спортсменов.</p>
         </div>
         <div class="ds-card">
-          <h4>🧩 3D-ассеты</h4>
-          <p>Стандартизированные габариты вырезок (~86–96px) с фиксированным оптическим вылетом за пределы контейнеров без обрезки краев.</p>
+          <h4>📐 Готовность к верстке и коду</h4>
+          <p>Все элементы построены по 8-пиксельной сетке, имеют строгую иерархию слоев, выровнены по базовым линиям и протестированы на контрастность WCAG AA.</p>
         </div>
       </div>
     </div>
@@ -322,11 +397,12 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-left">
-        <div class="footer-brand">BIOME REDESIGN</div>
-        <p>Кейс редизайна мобильного приложения персонального AI-ассистента по здоровью.</p>
+        <div class="footer-brand">BIOME REDESIGN · 2026</div>
+        <p>Кейс глубокого редизайна и систематизации AI-ассистента по здоровью BIOME.</p>
       </div>
       <div class="footer-right">
         <a href="#screens" class="footer-link">К экранам</a>
+        <a href="#comparison" class="footer-link">Сравнение</a>
         <a href="#overview" class="footer-link">К бордам</a>
       </div>
     </div>
